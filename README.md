@@ -60,3 +60,10 @@ def vgg10_unet(self, input_shape=(256,256,3), weights='imagenet'):
 ## 测试结果
 ![](./src/test.png)
 ![](./src/mask.png)
+
+## 感谢
+学习的过程中， 参考了项目： `https://github.com/zhixuhao/unet`
+
+论文引用： Convolutional Networks for Biomedical Image Segmentation
+
+如果你看了这个项目对你有帮助， 麻烦帮我点颗星星， 谢谢
