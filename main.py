@@ -9,7 +9,8 @@ if __name__ == '__main__':
     conv_image()
 
     unet = UNet()
-    is_train = False
+    is_train = True
+
     if is_train:
 
         model = unet.vgg10_unet(input_shape=(256,256,3), weights='imagenet')
@@ -42,4 +43,4 @@ if __name__ == '__main__':
         print(mask.shape)
         mask = mask.reshape((256,256,1))
         print(mask.shape)
-        cv2.imwrite('mask.png', mask)
+        cv2.imwrite('./data/test/masks/imgs/0.png', mask)
