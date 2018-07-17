@@ -89,7 +89,7 @@ def vgg10_unet(input_shape=(256,256,3), weights='imagenet'):
 
 
 if __name__ == '__main__':
-    is_train = True
+    is_train = False
     if is_train:
         model = vgg10_unet(input_shape=(512,512,3), weights='imagenet')
 
@@ -105,7 +105,7 @@ if __name__ == '__main__':
                             callbacks=[model_checkpoint])
 
     else:
-        model = vgg10_unet(input_shape=(256,256,3))
+        model = vgg10_unet(input_shape=(512,512,3))
         model.load_weights('unet.h5')
 
         for i in range(30):
