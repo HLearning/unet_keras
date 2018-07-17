@@ -1,5 +1,5 @@
 # unet
-unet主要用于语义分割， 这里是一个细胞边缘检测的例子， 数据集比较简单， 是三张tif动图。
+unet主要用于语义分割， 这里是一个细胞边缘检测的例子， 数据集比较简单。
 unet的网络结构， 因像字母‘U’而得名。
 
 这里有一篇关于unet的 [论文](U-Net: Convolutional Networks for Biomedical Image Segmentation)， 论文里面的网络结构如下：
